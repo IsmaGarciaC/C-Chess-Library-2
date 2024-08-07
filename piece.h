@@ -38,5 +38,11 @@ public:
     Knight(string name, Coordinates position, string color, Board *board); //Constructor
     int possibleMoves(Coordinates **&arrayMoves) override; //Overriding the function
 };
-
+class Pawn : public Piece
+{
+public:
+    Pawn(string name, Coordinates position, string color, Board *board); // Constructor
+    int possibleMoves(Coordinates **&arrayMoves) override; // Override the pure virtual function
+    ~Pawn();
+};
 #endif
