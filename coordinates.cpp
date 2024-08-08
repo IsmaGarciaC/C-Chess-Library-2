@@ -36,3 +36,4 @@ Coordinates::Coordinates(const Coordinates &crdns) : column(crdns.column), row(c
         os << "[" << crdnd.column << ", " << crdnd.row << "]"; // Output format: [column, row]
         return os;
     }
+    
